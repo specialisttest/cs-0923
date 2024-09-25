@@ -5,7 +5,13 @@ VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{DE4AF08F-2B2E-4A06-AD67-A1E80EC887BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vars", "Vars\Vars.csproj", "{8CB71A46-D178-4A6B-8488-00BF7C469ED8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vars", "Vars\Vars.csproj", "{8CB71A46-D178-4A6B-8488-00BF7C469ED8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Operators", "Operators\Operators.csproj", "{12EA9FFF-CEB5-4B7B-B63A-FF481D1C4DBC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iterations", "Iterations\Iterations.csproj", "{6EC26BD6-95BF-4638-9B79-59AF7B55832A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vorony", "Vorony\Vorony.csproj", "{703FC453-203F-4FD8-933C-6B1127320C8F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{8CB71A46-D178-4A6B-8488-00BF7C469ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8CB71A46-D178-4A6B-8488-00BF7C469ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8CB71A46-D178-4A6B-8488-00BF7C469ED8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{12EA9FFF-CEB5-4B7B-B63A-FF481D1C4DBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{12EA9FFF-CEB5-4B7B-B63A-FF481D1C4DBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{12EA9FFF-CEB5-4B7B-B63A-FF481D1C4DBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{12EA9FFF-CEB5-4B7B-B63A-FF481D1C4DBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC26BD6-95BF-4638-9B79-59AF7B55832A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC26BD6-95BF-4638-9B79-59AF7B55832A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC26BD6-95BF-4638-9B79-59AF7B55832A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC26BD6-95BF-4638-9B79-59AF7B55832A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{703FC453-203F-4FD8-933C-6B1127320C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{703FC453-203F-4FD8-933C-6B1127320C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{703FC453-203F-4FD8-933C-6B1127320C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{703FC453-203F-4FD8-933C-6B1127320C8F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
