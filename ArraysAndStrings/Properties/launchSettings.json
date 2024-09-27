@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "ArraysAndStrings": {
+      "commandName": "Project",
+      "commandLineArgs": "123 45 65"
+    }
+  }
+}
