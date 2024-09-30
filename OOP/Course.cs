@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    public class Course
+    public static class MyContainer
+    { 
+    
+    }
+
+
+    public partial class Course
     {
+        #region Property
+
         /*private string title = "Новый курс";
         public string Title
         {
@@ -19,7 +27,6 @@ namespace OOP
         //public string Title { get; set; }
         public string Title { get; init; } = "Новый курс";
 
-        public string Description { get; init; }
 
         private int length;
         public int Length
@@ -34,8 +41,9 @@ namespace OOP
                     throw new ArgumentException("Course Length out of [8..48]");
             }
         }
+        #endregion
 
-        static int counter = 0;
+        private static int counter = 0;
 
         // вызывается автоматически CLR при первом обращении к классу
         // используется для сложной инициализации статических полей
@@ -63,8 +71,13 @@ namespace OOP
             counter++;
         }
 
+        // Без модификатора доступа (private), не должен возращать значение (void)
+        partial void Validate();
+
         public void Show()
         {
+
+            Validate();
             // this - ссылка на объект, для которого вызван этот метод
             Console.WriteLine($"{this.Title} : {Length}");
         }
