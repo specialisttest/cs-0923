@@ -27,5 +27,28 @@ namespace OOP
             Console.WriteLine($"Circle ({X}, {Y}) Radius: {Radius } Color: {Color}");
             // base.Draw();
         }
+
+        public override string ToString()
+        {
+            return $"Circle ({X}, {Y}) Radius: {Radius} Color: {Color}";
+        }
+
+        public override bool Equals(object? obj)
+        {
+            if (obj != null && obj.GetType() == this.GetType()) 
+            { 
+                Circle c = (Circle)obj;
+                return Color == c.Color && X == c.X && Y == c.Y && Radius == c.Radius;
+            }
+            //if (obj is Circle c) 
+            //{ 
+            //    return Color == c.Color && X == c.X && Y == c.Y && Radius == c.Radius;
+            //}
+            
+            
+            return base.Equals(obj);
+        }
+
+        public override int GetHashCode() => HashCode.Combine(X, Y, Radius, Color);
     }
 }

@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Methods", "Methods\Methods.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Geometry", "Geometry\Geometry.csproj", "{07620653-84B6-4298-8062-B7BFE529CC18}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysAndStrings", "ArraysAndStrings\ArraysAndStrings.csproj", "{3A35D00E-F1B4-4EE3-95A7-DF792E639AAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysAndStrings", "ArraysAndStrings\ArraysAndStrings.csproj", "{3A35D00E-F1B4-4EE3-95A7-DF792E639AAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP", "OOP\OOP.csproj", "{D24DC45C-008F-477D-9401-AA39D4FADD53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "OOP\OOP.csproj", "{D24DC45C-008F-477D-9401-AA39D4FADD53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionProject", "ExceptionProject\ExceptionProject.csproj", "{6FDDE2E0-7576-41B3-BA40-360D28990DEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{D24DC45C-008F-477D-9401-AA39D4FADD53}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D24DC45C-008F-477D-9401-AA39D4FADD53}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D24DC45C-008F-477D-9401-AA39D4FADD53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FDDE2E0-7576-41B3-BA40-360D28990DEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FDDE2E0-7576-41B3-BA40-360D28990DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FDDE2E0-7576-41B3-BA40-360D28990DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FDDE2E0-7576-41B3-BA40-360D28990DEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

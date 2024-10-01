@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    public /*sealed*/ abstract class Shape
+    public /*sealed*/ abstract class Shape //: System.Object // object
     {
         public const string DEFAULT_COLOR = "black";
 

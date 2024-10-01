@@ -1,4 +1,5 @@
-﻿using static System.Math;
+﻿using System.Reflection;
+using static System.Math;
 
 /* В программе создать объекты классов
  * Romb, Square Circle.наследники Shape
@@ -118,6 +119,63 @@ namespace OOP
             //if (s is Circle cr2) cr2.Scale(1.5);
 
             cr1.Draw(); // Circle.Draw
+
+            var crx = new Circle("red", 0, 0, 150);
+
+            Console.WriteLine(cr1);
+            Console.WriteLine(crx);
+            Console.WriteLine(cr1.GetHashCode());
+            Console.WriteLine(crx.GetHashCode());
+
+            Console.WriteLine(cr1.Equals(crx));
+
+            //Type type = typeof(Circle);
+            //Type type = crx.GetType();
+
+            //Assembly.Load
+            Assembly currenctAssembly = Assembly.GetExecutingAssembly();
+            Type[] types = currenctAssembly.GetTypes();
+            foreach (Type type in types)
+            { 
+                Console.WriteLine($"{type.FullName}");
+                Console.WriteLine("\tMethods:");
+                MethodInfo[] methods = type.GetMethods();
+                foreach (var m in methods)
+                    Console.WriteLine($"\t\t{m.Name}");
+
+                
+            }
+
+            Console.WriteLine(GC.MaxGeneration);
+
+            //GC.Collect();
+            //GC.WaitForPendingFinalizers();
+
+            //GC.AddMemoryPressure(0);
+            //GC.RemoveMemoryPressure()
+
+            //GC.ReRegisterForFinalize(obj)
+            //GC.SuppressFinalize(obj)
+
+            WeakReference<Circle> cw = new WeakReference<Circle>(new Circle());
+            Circle ccw;
+            if (cw.TryGetTarget(out ccw))
+            {
+                ccw.Draw();
+            }
+
+            Console.WriteLine(Environment.UserName);
+
+            Assembly[] assemblies = AppDomain.CurrentDomain.GetAssemblies();
+            foreach (var ass in assemblies)
+            {
+                Console.WriteLine($"{ass.FullName}");
+            }
+
+
+
+
+
         }
     }
 }
