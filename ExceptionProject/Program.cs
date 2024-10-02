@@ -38,6 +38,7 @@ namespace ExceptionProject
 
         static void Main(string[] args)
         {
+
             try
             {
                 Divide("23", "4");

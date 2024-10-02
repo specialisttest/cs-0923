@@ -1,6 +1,8 @@
 ﻿using System.Reflection;
 using static System.Math;
 
+using System.Text.Json;
+
 /* В программе создать объекты классов
  * Romb, Square Circle.наследники Shape
  * Создать массив Shape[] scene и добавить
@@ -172,9 +174,37 @@ namespace OOP
                 Console.WriteLine($"{ass.FullName}");
             }
 
+            IScaleable sc = crx; // crx as IScaleable; //(IScaleable)crx;
+            
+            //sc.Scale(2);
+            sc.DefaultDoubleScale();
+            crx.Draw();
+            
 
 
+            Shape[] scene = {
+                new Point(1,2,"red"),
+                new Circle("green", 100, 200, 50)
+            };
 
+            //foreach (Shape shape in scene)
+            //    if (shape is IScaleable scale) // scale = (IScaleable)shape
+            //        scale.Scale(1.5);
+
+            IScaleable.Scale(scene);
+
+            Console.WriteLine("draw scene");
+            foreach (Shape shape in scene)
+                shape.Draw(); // polymorphism
+
+
+            string data = JsonSerializer.Serialize(crx);
+            Console.WriteLine(data);
+
+
+            Circle restoredCircle = JsonSerializer.Deserialize<Circle>(data);
+
+            restoredCircle.Draw();
 
         }
     }

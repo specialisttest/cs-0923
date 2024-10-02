@@ -3,24 +3,44 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
 using System.Text;
+using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
 namespace OOP
 {
-    public class Circle : Shape
+    public class Circle : Shape, IScaleable
     {
+        //[JsonInclude]
+        [JsonIgnore]
+        public string MyData { get; set; } = "abc";
+
         public int Radius { get; set; }
 
         public Circle(string color = DEFAULT_COLOR, int x = 0, int y =0, int radius = 0 )
-            : base(color, x, y)
+            : base(x, y, color)
         { 
             this.Radius = radius;
         }
 
+        
+        // implicit implementation
         public void Scale(double factor)
         {
             Radius = (int)Math.Round(Radius * factor); // bank round!!!
         }
+
+        /*
+        // explicit implementation
+        void IScaleable.Scale(double factor)
+        {
+            Radius = (int)Math.Round(Radius * factor); // bank round!!!
+        }*/
+
+        /*
+        void IScaleable.DefaultDoubleScale()
+        {
+            this.Scale(IScaleable.DEFAULT_FACTOR * 3);
+        }*/
 
         public override void Draw()
         {

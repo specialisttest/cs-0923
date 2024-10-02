@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP
 {
-    public /*sealed*/ abstract class Shape //: System.Object // object
+    public /*sealed*/ abstract class Shape : ICoords //: System.Object // object
     {
         public const string DEFAULT_COLOR = "black";
 
@@ -15,7 +15,7 @@ namespace OOP
 
         public int Y { get; set; }
 
-        public Shape(string color = DEFAULT_COLOR, int x = 0, int y = 0)
+        public Shape(int x = 0, int y = 0, string color = DEFAULT_COLOR)
         {
             Color = color;
             X = x;
@@ -23,6 +23,7 @@ namespace OOP
         }
 
         public abstract void Draw();
+
 
         /*public virtual void Draw()
         { 

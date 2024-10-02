@@ -22,10 +22,17 @@ namespace OOP
             get { return title; }
             set { title = value; }
         }*/
+        /*public string Title
+        {
+            get => title;
+            //set => title = value; 
+        }*/
 
-        // auto property
+        //public string Title => title; //  { get => title; }
+
+        // auto property (auto create field)
         //public string Title { get; set; }
-        public string Title { get; init; } = "Новый курс";
+        public /*required*/ string Title { get; init;  } = "Новый курс";
 
 
         private int length;

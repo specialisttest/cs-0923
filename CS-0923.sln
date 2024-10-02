@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArraysAndStrings", "ArraysA
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "OOP\OOP.csproj", "{D24DC45C-008F-477D-9401-AA39D4FADD53}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionProject", "ExceptionProject\ExceptionProject.csproj", "{6FDDE2E0-7576-41B3-BA40-360D28990DEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionProject", "ExceptionProject\ExceptionProject.csproj", "{6FDDE2E0-7576-41B3-BA40-360D28990DEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileProject", "FileProject\FileProject.csproj", "{7012AB00-D315-4467-AB5A-92FD6D92AA75}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{6FDDE2E0-7576-41B3-BA40-360D28990DEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FDDE2E0-7576-41B3-BA40-360D28990DEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FDDE2E0-7576-41B3-BA40-360D28990DEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7012AB00-D315-4467-AB5A-92FD6D92AA75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7012AB00-D315-4467-AB5A-92FD6D92AA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7012AB00-D315-4467-AB5A-92FD6D92AA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7012AB00-D315-4467-AB5A-92FD6D92AA75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
