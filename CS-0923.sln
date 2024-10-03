@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OOP", "OOP\OOP.csproj", "{D
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ExceptionProject", "ExceptionProject\ExceptionProject.csproj", "{6FDDE2E0-7576-41B3-BA40-360D28990DEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileProject", "FileProject\FileProject.csproj", "{7012AB00-D315-4467-AB5A-92FD6D92AA75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FileProject", "FileProject\FileProject.csproj", "{7012AB00-D315-4467-AB5A-92FD6D92AA75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{99630CEB-EE29-4F8B-8E0D-768E3E013851}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{7012AB00-D315-4467-AB5A-92FD6D92AA75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7012AB00-D315-4467-AB5A-92FD6D92AA75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7012AB00-D315-4467-AB5A-92FD6D92AA75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99630CEB-EE29-4F8B-8E0D-768E3E013851}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99630CEB-EE29-4F8B-8E0D-768E3E013851}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99630CEB-EE29-4F8B-8E0D-768E3E013851}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99630CEB-EE29-4F8B-8E0D-768E3E013851}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

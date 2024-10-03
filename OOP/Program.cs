@@ -2,6 +2,7 @@
 using static System.Math;
 
 using System.Text.Json;
+using System.Text;
 
 /* В программе создать объекты классов
  * Romb, Square Circle.наследники Shape
@@ -15,6 +16,22 @@ using System.Text.Json;
  */
 namespace OOP
 {
+
+    public static class StringExtension
+    {
+        public static string Capitalize(this string s)
+        {
+            string[] words = s.Split(' ');
+            StringBuilder stringBuilder = new StringBuilder();
+            foreach (string word in words)
+            {
+                if (word.Length > 0)
+                    stringBuilder.Append(char.ToUpper(word[0])).
+                        Append(word.Substring(1).ToLower()).Append(' ');
+            }
+            return stringBuilder.ToString();
+        }
+    }
 
     public partial class Course
     {
@@ -181,11 +198,19 @@ namespace OOP
             crx.Draw();
             
 
-
+            /*
+             * Сделать коллекцию фигур (Shape)
+             * Отсортировать их по удаленность от начала координат
+             * 
+             */
+            
+            
             Shape[] scene = {
                 new Point(1,2,"red"),
                 new Circle("green", 100, 200, 50)
             };
+
+
 
             //foreach (Shape shape in scene)
             //    if (shape is IScaleable scale) // scale = (IScaleable)shape
@@ -205,6 +230,40 @@ namespace OOP
             Circle restoredCircle = JsonSerializer.Deserialize<Circle>(data);
 
             restoredCircle.Draw();
+
+            Point p1 = new Point(10, 20);
+            Point p2 = new Point(10, 20);
+
+            Console.WriteLine(p1.Equals(p2));
+            Console.WriteLine(p1 == p2);
+
+            //if (p1 == null)
+            //if (null == p1)
+
+            //Point p3 = p1 + p2; //Point.sum(p1, p2);
+            //Point p3 = 5 + p1;
+            Point p3 = -p1;
+
+            p3.Draw();
+
+            double distance = (double)p1;
+            //double distance = p1;
+
+            p1["X"] = 55; // p1.Y = 55;
+
+            int px = p1[0];
+            int py = p1[1];
+
+            Console.WriteLine(distance);
+
+            string hello = "hello sergey";
+            string hello2 = hello.Capitalize();
+
+            //StringExtension.Capitalize(hello);
+            //hello.Capitalize(); // Hello String
+
+            Console.WriteLine(hello2);
+
 
         }
     }
