@@ -6,6 +6,10 @@ using System.Text;
 using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 
+/*
+ * Добавить событие связанное с измением радиуса
+ */
+
 namespace OOP
 {
     public class Circle : Shape, IScaleable

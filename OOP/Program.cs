@@ -33,6 +33,7 @@ namespace OOP
         }
     }
 
+    [Developer(Name = "Sergey")]
     public partial class Course
     {
         public string Description { get; init; }
@@ -264,6 +265,47 @@ namespace OOP
 
             Console.WriteLine(hello2);
 
+            /*DatabaseConnection db = new DatabaseConnection();
+            try
+            {
+                db.Execute();
+            }
+            finally 
+            {
+                db?.Dispose();
+            }*/
+
+            /*using (DatabaseConnection db = new DatabaseConnection())
+            {
+                db.Execute();
+                return;
+            } // db.Dispose()
+            */
+
+            Test();
+            Console.WriteLine("continue Main");
+
+            Person person1 = new Person("Sergey", 47);
+            Person person2 = new Person("Sergey", 47);
+            Console.WriteLine($"{person1.Name} : {person1.Age}");
+            Console.WriteLine(person1 == person2);
+            Console.WriteLine(person1);
+
+            Person person3 = person1 with { Age = 40 };
+                //new Person(person1.Name, 40)
+
+
+
+
+        }
+
+        static void Test()
+        {
+            using DatabaseConnection db = new DatabaseConnection();
+            using DatabaseConnection db2 = new DatabaseConnection();
+            db.Execute();
+
+            Console.WriteLine("continue Test");
 
         }
     }
